@@ -49,23 +49,24 @@ const Perform_Calculation=  {
    '=': (First_Operand, Second_Operand) => Second_Operand,//finds the result
 };
 
-function Calculator_Reset() { //function that resets calculators values to o
+function Calculator_Reset() { //function that resets calculators values to 0
     Calculator.Display_Value='0';
     Calculator.First_Operand=null;
     Calculator.Wait_Second_Operand=false;
     Calculator.operator=null;
 }
-function Update_Display() {
+function Update_Display() {//this function is used to update the screen with the pressed values
     const display=document.querySelector('.calculator-screen');
     display.value=Calculator.Display_Value;
 }
-Update_Display();
+Update_Display();// this function is used to monitor pressed keys
 const keys=document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event)=> { 
-    const {target }=event;
-    if(!target.matches ('button')) {
+    const {target }=event;//the object that represents the element
+    if(!target.matches ('button')) {// that was clicked
         return;
     }
+    //this ensures that all the digits arecleared from the calculator after all clear was pressed including decimal dot and value
     if(target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
