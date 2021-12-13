@@ -9,16 +9,17 @@ html {
     box-sizing: inherit;
 }
 .calculator {
-  
-    border:1.2px solid darkslategray;
+    color:black;
+   
+    background-color: darkgray;
     border-radius:7px;
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    width: 500px;
-    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(0,0,0,.5));
-    background-color: lightgray;
+    width: 400px;
+  
+
 }
 
 .calculator-screen {
@@ -27,38 +28,42 @@ html {
     height: 80px;
     border: none;
     background-color:#E0FFFF;
-    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(63, 127, 191, 0.7));
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, white);
     text-align: right;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 7px 7px 0px 0px;
 }
 button {
+   
+    
     height: 70px;
     border-radius: 10px;
-
+    border: 1px;
     background-color: transparent;
     font-size:3.2rem;
     color:black;
     background-image: linear-gradient(to bottom,transparent,transparent 50% rgba(0,0,0,.06));
     text-shadow: 0 1px rgba (255,255,255,.4);
-    box-shadow: inset 0 0 0 1px rgba (255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.05), inset 0 -1p 0 0 rgba(255,255,255,rgba(255,255,255,.05),0 1px 0 0 rgba(255,255,255,.05));
+    box-shadow: inset 0 0 0 1px rgba (255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.05), inset 0 -1px 0 0 rgba(255,255,255,rgba(255,255,255,.05),0 1px 0 0 rgba(255,255,255,.05));
 }
 
 button:hover {
     background-color:#e1e1e1;
 }
 
+
 .operator {
     color:black;
-    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(0,0,0,.5));
-    background-color: lightgray;
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, white);
+    background-color: #1E90FF;
 }
 
 .all-clear {
-    background-color: red;
+    background-color: #FF7F50;
     border-color:darkslategray;
     color: #fff;
+    font-size: 12px;
 }
 
 .all-clear:hover {
@@ -66,7 +71,7 @@ button:hover {
 }
 
 .equal-sign {
-    background-color: blue;
+    background-color: #1E90FF;
     border-color: darkslategray;
     color:#fff;
     height:100%;
@@ -83,11 +88,24 @@ button:hover {
     grid-gap: 20px;
     padding:20px;
 }
-
-.decimal-function { 
-    background-color: #00FF00;
+.numbers {
+    border-radius: 10%;
+    color:black;
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(247, 242, 242, 0.5));
+    background-color: #ace7ff;
 }
 
-.decimal-function:hover { 
-    background-color:#32CD32 ;
+.numbers:hover {
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(247, 242, 242, 0.5));
+    background-color: rebeccapurple;
+}
+.decimal {
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(247, 242, 242, 0.5));
+    background-color: rgb(92, 211, 37);
+
+}
+.decimal:hover {
+    background-image:linear-gradient(to bottom, transparent,transparent 50%, rgba(247, 242, 242, 0.5));
+    background-color: rgb(30, 87, 4);
+
 }
